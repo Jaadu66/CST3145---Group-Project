@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
 </head>
 <body>
-    <div idd="app" class="container border border-primary" style="width:15%; padding:10px; margin:10px;">
+    <div id="app" class="container border border-primary" style="width:15%; padding:10px; margin:10px;">
         <!--Creating labels to show information-->
         <!-- The double curly brackets are the shorter version of v-text-->
         <p>Subject: {{subject}}</p>
@@ -35,7 +35,7 @@
         let webstore = new Vue({
             el: "#app",
             data: {
-                subject: "English",
+                subject: "Math",
                 location: "London",
                 price: "£100",
                 spaces: 5
@@ -46,7 +46,6 @@
                 addToCart: function(){
                     //This condition checks the quantity left. 
                     //The button will grey out once the quantity is 0
-                    //test change
                    if(this.spaces > 0){
                         this.spaces--;
                     }
